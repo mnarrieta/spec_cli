@@ -36,6 +36,7 @@ Tabla contacto en base de datos MySQL
 4. El sistema valida los datos
 5. El sistema comprueba si existe un contacto con el mismo telefono.
 6. El sistema inserta el conatcto en la base de datos y te muestra el id con los datos del contacto
+   
 ** Flujo alternativo A  (validación falla)**
    - El sistema muestra un mensaje de error y solicta corregir el error
 ** Flujo Alternativo B (validacion correcta) **
