@@ -64,7 +64,7 @@ Tabla contacto en base de datos MySQL
 ### CU-05: Listar contactos
 1. El usuario selecciona "Ver contacto"
 2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
-
+---
 ## 5. Reglas de validación
 | Campo | Regla|
 |-------|------|
@@ -75,4 +75,27 @@ Tabla contacto en base de datos MySQL
 | email | Formato RFC 5322 básico: `usuario@dominio.tld` |
 | notes | Sin restricción de formato. Máximo 5 000 caracteres. |
 
+## 6. Requisitos no funcionales
+
+| ID    | Requisito                                                              |
+|-------|------------------------------------------------------------------------|
+| RNF-01| El tiempo de respuesta de cualquier operación debe ser < 2 segundos.   |
+| RNF-02| La aplicación debe funcionar con Python 3.10+ y MySQL 8.0+.            |
+| RNF-03| El código debe tener cobertura de tests >= 80 % en módulos de lógica.  |
+| RNF-04| El esquema de base de datos debe incluir índices en campos de búsqueda.|
+| RNF-05| Los mensajes de error deben ser claros y en el idioma de la interfaz.  |
+
+---
+
+## 7. Mensajes de error estándar
+
+| Código  | Mensaje                                              |
+|---------|------------------------------------------------------|
+| ERR-001 | "El nombre es obligatorio."                          |
+| ERR-002 | "Debe indicar al menos un teléfono o un email."      |
+| ERR-003 | "El formato del email no es válido."                 |
+| ERR-004 | "El formato del teléfono no es válido."              |
+| ERR-005 | "No se encontró ningún contacto con ese ID."         |
+| ERR-006 | "Error de conexión a la base de datos."              |
+| ERR-007 | "Ya existe un contacto con ese teléfono o email."    |
 
