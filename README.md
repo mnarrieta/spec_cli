@@ -12,6 +12,7 @@
 ### spec.md
 *Define qué construye el sistema: el modelo de datos, los casos de uso, las reglas de validación y los requisitos no funcionales. Es el contrato entre quien pide la aplicación y quien la desarrolla.*
 
+| :--- | :--- |
 | constitution.md |  Principios y límites globales (nunca cambia) |
 | agents.md       |  Quién actúa y con qué restricciones |
 | SPEC.md          |  Qué se construye (requisitos funcionales) |
