@@ -7,5 +7,55 @@ date: "29/04/2026"
 ## 1. Descripción general 
 La aplicación es una herramienta de línea de comandos (CLI) escrita en lenguaje Python que permite gestionar una agenda de contactos almacenada en una base de datos MySQL. Ofreciendo operaciones propias de CRUD.
 
-## 
+## 2. Funcionalidades
+- Crear, listar, actualizar y eliminar contactos.
+- Buscar contacto por nombre, por teléfono y por email
+- Listar todos los contactos
+- Crear un menú de opciones
+- CLI sea interactiva
+- Almacene información en una base de datos MySQL
+
+## 3. Modelo de datos
+
+Tabla contacto en base de datos MySQL
+| Campo | Tipo | Obligatorio | Descripcion |
+|-------|------|-------------|-------------|
+| id | INT AUTOINCREMENT | SI | Identificador único |
+| name | VARCHAR(100) | SI | Nombre contacto |
+| surname | VARCHAR(200) | NO | Apellidos contacto |
+| tel1 | INTEGER | SI | Telefono contacto1 |
+| tel2 | INTEGER | NO | Telefono contacto2 |
+| email | VARCHAR(100) | NO | Email contacto |
+| notes | TEXT | NO | Informacion contacto |
+
+## 4. Casos de uso
+### CU-01: Añadir contacto
+1. El usuario selecciona "Añdir contacto"
+2. El sistema pide: Nombre (name) surname, número (tel1), tel2, email, notes
+3. El usuario introduce los datos
+4. El sistema valida los datos
+5. El sistema comprueba si existe un contacto con el mismo telefono.
+6. El sistema inserta el conatcto en la base de datos y te muestra el id con los datos del contacto
+** Flujo alternativo A  (validación falla)**
+   - El sistema muestra un mensaje de error y solicta corregir el error
+** Flujo Alternativo B (validacion correcta) **
+  - El sistema inserta los datos en la base de datos
+ ** Flujo Alternativo C (contacto duplicado) **
+    - El sistema nos advierte de que existe el contacto y pide confirmación de guardado
+   
+   
+### CU-02: Ver contacto
+1. El usuario selecciona "Ver contacto"
+2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
+3. El usuario introduce los datos
+4. El sistema comprueba si existe coincidencias con un LIKE en name, surname, tel1.
+5. El sistema muestra todos los resultados coincidentes con ese nombre.
+
+### CU-03: Eliminar contacto
+
+### CU-04: Editar contacto
+
+### CU-05: Listar contactos
+
+
 
