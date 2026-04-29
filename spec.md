@@ -44,8 +44,7 @@ Tabla contacto en base de datos MySQL
   - El sistema inserta los datos en la base de datos
 
 **Flujo Alternativo C** (contacto duplicado)
-    - El sistema nos advierte de que existe el contacto y pide confirmación de guardado
-   
+   - El sistema nos advierte de que existe el contacto y pide confirmación de guardado
    
 ### CU-02: Ver contacto
 1. El usuario selecciona "Ver contacto"
@@ -55,10 +54,18 @@ Tabla contacto en base de datos MySQL
 5. El sistema muestra todos los resultados coincidentes con ese nombre.
 
 ### CU-03: Eliminar contacto
+1. El usuario selecciona "Ver contacto"
+2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
 
 ### CU-04: Editar contacto
-
+1. El usuario selecciona "Ver contacto"
+2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
+  
 ### CU-05: Listar contactos
+1. El usuario selecciona "Ver contacto"
+2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
+
+## 5. Reglas de validación
 
 
 
