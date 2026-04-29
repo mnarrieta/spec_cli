@@ -39,8 +39,10 @@ Tabla contacto en base de datos MySQL
 
 **Flujo alternativo A**  (validación falla)
    - El sistema muestra un mensaje de error y solicta corregir el error
+
 **Flujo Alternativo B** (validacion correcta)
   - El sistema inserta los datos en la base de datos
+
 **Flujo Alternativo C** (contacto duplicado)
     - El sistema nos advierte de que existe el contacto y pide confirmación de guardado
    
