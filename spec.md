@@ -66,6 +66,13 @@ Tabla contacto en base de datos MySQL
 2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
 
 ## 5. Reglas de validación
-
+| Campo | Regla|
+|-------|------|-------------|-------------|
+| name | No vacío. Longitud 2–100 caracteres. Solo letras, espacios, guiones |
+| surname | No vacío. Longitud 2–200 caracteres. Solo letras, espacios, guiones |
+| tel1 | Formato: dígitos, espacios, `+`, `(`, `)`, `-`. Longitud 7–20 chars |
+| tel2 | Formato: dígitos, espacios, `+`, `(`, `)`, `-`. Longitud 7–20 chars |
+| email | Formato RFC 5322 básico: `usuario@dominio.tld` |
+| notes | Sin restricción de formato. Máximo 5 000 caracteres. |
 
 
