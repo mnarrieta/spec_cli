@@ -69,7 +69,6 @@ componentes de las capas y lanza el bucle principal del menú CLI.
 ### 3.2 `cli/menu.py`
 Controla el flujo de navegación de la interfaz de usuario.
 **Funciones principales:**
-
 | Función              | Descripción                                      |
 |----------------------|--------------------------------------------------|
 | `run()`              | Bucle principal del menú                         |
@@ -79,6 +78,18 @@ Controla el flujo de navegación de la interfaz de usuario.
 | `menu_ver()`         | Muestra detalle de un contacto por ID            |
 | `menu_editar()`      | Submenú de edición campo a campo                 |
 | `menu_eliminar()`    | Solicita confirmación y elimina                  |
+
+ ---
+### 3.3 `cli/formatters.py`
+Funciones de presentación puras (sin lógica de negocio).
+| Función                       | Descripción                              |
+|-------------------------------|------------------------------------------|
+| `tabla_contactos(contactos)`  | Renderiza lista con `tabulate`           |
+| `detalle_contacto(contacto)`  | Muestra todos los campos de uno          |
+| `mensaje_error(codigo, msg)`  | Formatea mensajes de error               |
+| `mensaje_exito(msg)`          | Formatea mensajes de confirmación        |
+
+---
 
 
 
