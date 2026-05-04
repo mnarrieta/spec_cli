@@ -90,7 +90,24 @@ Funciones de presentación puras (sin lógica de negocio).
 | `mensaje_exito(msg)`          | Formatea mensajes de confirmación        |
 
 ---
+### 3.4 `logic/models.py`
+Define la estructura de datos del dominio.
+```python
 
+@dataclass
+class Contacto:
+    nombre: str
+    telefono: Optional[str] = None
+    email: Optional[str] = None
+    direccion: Optional[str] = None
+    notas: Optional[str] = None
+    id: Optional[int] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+    deleted_at: Optional[datetime] = None
+```
+
+---
 
 
 ## 4. Flujo de datos — Ejemplo: Crear contacto
