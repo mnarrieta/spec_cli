@@ -9,20 +9,26 @@ Este documento registra las decisiones técnicas y de diseño significativas tom
 
 ## ADR-001: Elección de base de datos — MySQL
 **Fecha:** 2026-04-27  
+
 **Estado:** Aceptado
+
 **Contexto:**  
 Se necesita un motor de base de datos relacional para persistir los contactos con soporte para consultas de búsqueda, integridad de datos y fácil despliegue local.
+
 **Opciones consideradas:**
 - MySQL 8.0
 - PostgreSQL 16
 - SQLite 3
+
 **Decisión:**  
 Se elige **MySQL 8.0**.
+
 **Justificación:**
 - Es el requisito explícito del proyecto.
 - Amplia documentación, soporte en hosting compartido y herramientas de administración
   maduras (phpMyAdmin, MySQL Workbench).
 - Compatible con MariaDB, lo que facilita migraciones a entornos alternativos.
+
 **Consecuencias:**
 - Se requiere un servidor MySQL corriendo localmente o accesible en red.
 - El driver elegido es `mysql-connector-python` (oficial de Oracle, sin dependencias C).
