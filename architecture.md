@@ -34,10 +34,32 @@ La aplicación sigue una **arquitectura en capas** (Layered Architecture) para s
 ```
 
 ## 2. Estructura de directorios
-- `main.py`: Punto de entrada y gestión del menú de usuario.
-- `database.py`: Clase encargada de la conexión (Singleton) y cierre de sesión.
-- `crud.py`: Funciones específicas para sentencias SQL (INSERT, SELECT, UPDATE, DELETE).
-- `models.py`: Definición de la entidad `Contacto`.
+
+```
+agenda_contactos/
+│
+├── main.py                 # Punto de entrada de la aplicación
+│
+├── cli/                    # Capa de presentación
+│   ├── __init__.py
+│   ├── menu.py             # Menú principal y submenús
+│   └── formatters.py       # Formateo de tablas y mensajes
+│
+├── logic/                  # Capa de lógica de negocio
+│   ├── __init__.py
+│   ├── models.py           # Clases de datos de contactos
+│   ├── validators.py       # Validación de campos
+│
+├── db/                     # Capa de acceso a datos
+│   ├── __init__.py
+│   ├── connection.py       # Pool/conexión MySQL
+│
+├── exceptions.py           # Excepciones personalizadas del proyecto
+│
+└── tests/
+    ├── __init__.py
+    └── test_validators.py
+```
 
 ## 3. Descripción de módulos
 
