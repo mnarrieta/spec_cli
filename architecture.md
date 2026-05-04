@@ -63,6 +63,24 @@ agenda_contactos/
 ```
 
 ## 3. Descripción de módulos
+### 3.1 `main.py`
+Punto de entrada. Inicializa la conexión a la base de datos, instancia los
+componentes de las capas y lanza el bucle principal del menú CLI.
+### 3.2 `cli/menu.py`
+Controla el flujo de navegación de la interfaz de usuario.
+**Funciones principales:**
+
+| Función              | Descripción                                      |
+|----------------------|--------------------------------------------------|
+| `run()`              | Bucle principal del menú                         |
+| `menu_anadir()`      | Submenú de creación de contacto                  |
+| `menu_listar()`      | Muestra lista paginada                           |
+| `menu_buscar()`      | Solicita término y muestra resultados            |
+| `menu_ver()`         | Muestra detalle de un contacto por ID            |
+| `menu_editar()`      | Submenú de edición campo a campo                 |
+| `menu_eliminar()`    | Solicita confirmación y elimina                  |
+
+
 
 ## 4. Flujo de datos — Ejemplo: Crear contacto
 
