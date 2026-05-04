@@ -1,6 +1,6 @@
 # Context engineering utilizando SPEC #
 
-** SPEC (a veces llamada Spec-Driven Development) es una metodología que antepone la especificación escrita a la escritura de código. La idea central es que un agente de IA, o un equipo humano, no debería empezar a programar hasta que los documentos de especificación estén completos y acordados.**
+**SPEC (a veces llamada Spec-Driven Development) es una metodología que antepone la especificación escrita a la escritura de código. La idea central es que un agente de IA, o un equipo humano, no debería empezar a programar hasta que los documentos de especificación estén completos y acordados.**
 El conjunto de ficheros forma una jerarquía de abstracción descendente:
 ---
 | Campo | Descripción |
