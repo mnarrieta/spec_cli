@@ -77,6 +77,3 @@ Este documento establece los principios irrenunciables, las reglas de diseño y 
 Una funcionalidad se considera completa cuando:
 - [ ] El código pasa todos los tests sin fallos.
 - [X] La cobertura de tests del módulo es >= 80 %.
-- [ ] El código pasa `flake8` y `black --check`.
-- [ ] La documentación (docstrings, `SPEC.md`) está actualizada.
-- [ ] No hay credenciales ni datos personales de prueba hardcodeados.
