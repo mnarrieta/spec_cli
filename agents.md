@@ -16,4 +16,16 @@ Este documento describe los agentes (roles de IA o automatizados) que pueden ope
 | **cli_agent** | Proporcionar la interfaz de usuario en línea de comandos (CLI) para interactuar con la agenda. |
 | **test_agent (opcional)** | Ejecutar la suite de pruebas automatizadas del proyecto. |
 ---
+## Diagrama de interacción
 
+```
+Usuario
+  │
+  ▼
+cli_agent  ──►  logic_agent  ──►  db_agent  ──►  MySQL
+                                                   │
+test_agent ◄─────────────────────────────────────┘
+            (entorno de pruebas aislado)
+```
+
+---
