@@ -47,23 +47,29 @@ Tabla contacto en base de datos MySQL
    - El sistema nos advierte de que existe el contacto y pide confirmación de guardado
    
 ### CU-02: Ver contacto
-1. El usuario selecciona "Ver contacto"
-2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
-3. El usuario introduce los datos
-4. El sistema comprueba si existe coincidencias con un LIKE en name, surname, tel1.
-5. El sistema muestra todos los resultados coincidentes con ese nombre.
+1. El usuario introduce el `id` del contacto (o lo selecciona de una lista).
+2. El sistema muestra todos los campos del contacto en formato legible.
 
 ### CU-03: Eliminar contacto
-1. El usuario selecciona "Ver contacto"
-2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
+1. El usuario selecciona "Eliminar contacto" e introduce el `id`.
+2. El sistema muestra los datos del contacto y solicita confirmación ("¿Seguro? [s/N]").
+3. Si el usuario confirma, el sistema realiza soft-delete (`deleted_at = NOW()`).
+4. El sistema confirma la eliminación.
 
 ### CU-04: Editar contacto
-1. El usuario selecciona "Ver contacto"
-2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
+1. El usuario selecciona "Editar contacto" e introduce el `id`.
+2. El sistema muestra los valores actuales campo a campo.
+3. Para cada campo, el usuario puede introducir un nuevo valor o dejarlo vacío para
+   mantener el actual.
+4. El sistema valida los nuevos valores.
+5. El sistema actualiza el registro y muestra confirmación.
   
 ### CU-05: Listar contactos
-1. El usuario selecciona "Ver contacto"
-2. El sistema pide: Nombre (name), Apellido (surname) o telefono (tel)
+1. El usuario selecciona "Listar contactos".
+2. El sistema muestra todos los contactos activos (sin `deleted_at`) en formato tabla.
+3. Si hay más de 20 contactos, pagina de 20 en 20.
+4. El usuario puede navegar entre páginas o volver al menú.
+
 ---
 ## 5. Reglas de validación
 | Campo | Regla|
