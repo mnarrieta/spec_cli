@@ -47,12 +47,13 @@ agenda_contactos/
 │
 ├── logic/                  # Capa de lógica de negocio
 │   ├── __init__.py
-│   ├── models.py           # Clases de datos de contactos
+│   ├── models.py           # Definición de la entidad `Contacto`.
+|   ├── services.py         # Funciones específicas para sentencias SQL (INSERT, SELECT, UPDATE, DELETE).
 │   ├── validators.py       # Validación de campos
 │
 ├── db/                     # Capa de acceso a datos
 │   ├── __init__.py
-│   ├── connection.py       # Pool/conexión MySQL
+│   ├── connection.py       # Clase encargada de la conexión (Singleton) y cierre de sesión.
 │
 ├── exceptions.py           # Excepciones personalizadas del proyecto
 │
