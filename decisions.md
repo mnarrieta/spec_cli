@@ -8,7 +8,7 @@ Este documento registra las decisiones técnicas y de diseño significativas tom
 ---
 
 ## ADR-001: Elección de base de datos — MySQL
-**Fecha:** 2026-04-27  
+**Fecha:** 2026-04-05  
 
 **Estado:** Aceptado
 
@@ -36,16 +36,22 @@ Se elige **MySQL 8.0**.
 ---
 
 ## ADR-002: Interfaz de usuario — CLI interactiva
+
 **Fecha:** 2026-04-27  
+
 **Estado:** Aceptado
+
 **Contexto:**  
 La aplicación necesita una interfaz de usuario. Las opciones principales son CLI, GUI de escritorio o aplicación web.
+
 **Opciones consideradas:**
 - CLI con menús interactivos
 - GUI con Tkinter
 - API REST + frontend web
+
 **Decisión:**  
 Se implementa una **CLI interactiva** (menús en bucle).
+
 **Justificación:**
 - Menor complejidad de implementación y mantenimiento.
 - No requiere dependencias adicionales de UI pesadas.
