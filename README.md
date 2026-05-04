@@ -24,4 +24,5 @@ El conjunto de ficheros forma una jerarquía de abstracción descendente:
 *Responde al por qué se tomaron las decisiones que hay. Cada ADR documenta qué alternativas se evaluaron y por qué se descartó cada una. Es el documento que evita repetir debates y que explica el código a futuros desarrolladores (o a ti mismo seis meses después).*
 ### spec.md
 *Define qué construye el sistema: el modelo de datos, los casos de uso, las reglas de validación y los requisitos no funcionales. Es el contrato entre quien pide la aplicación y quien la desarrolla.*
-
+### agenda_contactos.zip
+*Programa resultante de utilizar la especificación SPEC detallada en los ficheros anteriores con CLAUDE (05/05/2026)*
