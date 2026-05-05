@@ -81,7 +81,7 @@ Tabla contacto en base de datos MySQL
 | email | Formato RFC 5322 básico: `usuario@dominio.tld` |
 | notes | Sin restricción de formato. Máximo 5 000 caracteres. |
 
-## 6. Requisitos no funcionales
+## 6. Requisitos no funcionales (opcional)
 
 | ID    | Requisito                                                              |
 |-------|------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ Tabla contacto en base de datos MySQL
 
 ---
 
-## 7. Mensajes de error estándar
+## 7. Mensajes de error estándar (opcional)
 
 | Código  | Mensaje                                              |
 |---------|------------------------------------------------------|
